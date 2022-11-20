@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GET_NEXT_LINE_H	get_next_line.h	14;"	d
+ft_strdup	get_next_line_utils.c	/^char    *ft_strdup(const char *s1)$/;"	f
+ft_strjoin	get_next_line_utils.c	/^char    *ft_strjoin(char const *s1, char const *s2)$/;"	f
+ft_strlen	get_next_line_utils.c	/^size_t  ft_strlen(const char *s)$/;"	f
+ft_substr	get_next_line_utils.c	/^char    *ft_substr(char const *s, unsigned int start, size_t len)$/;"	f
+get_next_line	get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
+main	test.c	/^int main()$/;"	f
