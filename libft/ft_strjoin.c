@@ -6,7 +6,7 @@
 /*   By: wocheon <wocheon@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 22:27:43 by wocheon           #+#    #+#             */
-/*   Updated: 2022/11/09 16:30:46 by wocheon          ###   ########.fr       */
+/*   Updated: 2022/11/10 20:25:55 by wocheon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 && !s2)
 		return (NULL);
-	else if (!s1 && s2)
-		return (ft_strdup(s2));
-	else if (s1 && !s2)
-		return (ft_strdup(s1));
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	str = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));

@@ -3,11 +3,11 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.8	//
 BNS_OBJS	Makefile	/^BNS_OBJS = $(BNS_SRCS:%.c=%.o)$/;"	m
-BNS_SRCS	Makefile	/^BNS_SRCS = ft_lstnew.c \\$/;"	m
+BNS_SRCS	Makefile	/^BNS_SRCS = ft_lstnew_bonus.c \\$/;"	m
 FLAGS	Makefile	/^FLAGS = -Wall -Wextra -Werror$/;"	m
-LIBFT_H	libft.h	14;"	d
+LIBFT_H	libft.h	/^# define LIBFT_H$/;"	d
 NAME	Makefile	/^NAME = libft.a$/;"	m
 OBJECTS	Makefile	/^	OBJECTS = $(OBJS) $(BNS_OBJS)$/;"	m
 OBJECTS	Makefile	/^	OBJECTS = $(OBJS)$/;"	m
@@ -25,15 +25,15 @@ ft_isdigit	ft_isdigit.c	/^int	ft_isdigit(int c)$/;"	f
 ft_isprint	ft_isprint.c	/^int	ft_isprint(int c)$/;"	f
 ft_itoa	ft_itoa.c	/^char	*ft_itoa(int n)$/;"	f
 ft_len_count	ft_itoa.c	/^static int	ft_len_count(long long num)$/;"	f	file:
-ft_lstadd_back	ft_lstadd_back.c	/^void	ft_lstadd_back(t_list **lst, t_list *new)$/;"	f
-ft_lstadd_front	ft_lstadd_front.c	/^void	ft_lstadd_front(t_list **lst, t_list *new)$/;"	f
-ft_lstclear	ft_lstclear.c	/^void	ft_lstclear(t_list **lst, void (*del)(void *))$/;"	f
-ft_lstdelone	ft_lstdelone.c	/^void	ft_lstdelone(t_list *lst, void (*del)(void *))$/;"	f
-ft_lstiter	ft_lstiter.c	/^void	ft_lstiter(t_list *lst, void (*f)(void *))$/;"	f
-ft_lstlast	ft_lstlast.c	/^t_list	*ft_lstlast(t_list *lst)$/;"	f
-ft_lstmap	ft_lstmap.c	/^t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))$/;"	f
-ft_lstnew	ft_lstnew.c	/^t_list	*ft_lstnew(void *content)$/;"	f
-ft_lstsize	ft_lstsize.c	/^int	ft_lstsize(t_list *lst)$/;"	f
+ft_lstadd_back	ft_lstadd_back_bonus.c	/^void	ft_lstadd_back(t_list **lst, t_list *new)$/;"	f
+ft_lstadd_front	ft_lstadd_front_bonus.c	/^void	ft_lstadd_front(t_list **lst, t_list *new)$/;"	f
+ft_lstclear	ft_lstclear_bonus.c	/^void	ft_lstclear(t_list **lst, void (*del)(void *))$/;"	f
+ft_lstdelone	ft_lstdelone_bonus.c	/^void	ft_lstdelone(t_list *lst, void (*del)(void *))$/;"	f
+ft_lstiter	ft_lstiter_bonus.c	/^void	ft_lstiter(t_list *lst, void (*f)(void *))$/;"	f
+ft_lstlast	ft_lstlast_bonus.c	/^t_list	*ft_lstlast(t_list *lst)$/;"	f
+ft_lstmap	ft_lstmap_bonus.c	/^t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))$/;"	f
+ft_lstnew	ft_lstnew_bonus.c	/^t_list	*ft_lstnew(void *content)$/;"	f
+ft_lstsize	ft_lstsize_bonus.c	/^int	ft_lstsize(t_list *lst)$/;"	f
 ft_memchr	ft_memchr.c	/^void	*ft_memchr(const void *s, int c, size_t n)$/;"	f
 ft_memcmp	ft_memcmp.c	/^int	ft_memcmp(const void *s1, const void *s2, size_t n)$/;"	f
 ft_memcpy	ft_memcpy.c	/^void	*ft_memcpy(void *dest, const void *src, size_t n)$/;"	f
