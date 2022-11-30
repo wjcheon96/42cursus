@@ -9,6 +9,5 @@ char	*get_next_line(int fd)
 	
 	if (BUFFER_SIZE <= 0 || fd <= 0)
 		return (NULL);
-	if (ft_get_line(line, lst_buf))
 
 }
