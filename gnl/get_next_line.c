@@ -59,7 +59,7 @@ char	*ft_get_line(int fd, char *buf, char *backup)
 		backup = ft_join_buf(backup, buf);
 		if (!backup)
 			return (NULL);
-		if (ft_is_newline(buf) != -1)
+		if (ft_is_newline(buf) >= 0)
 			break ;
 	}
 	return (backup);
@@ -90,7 +90,6 @@ char	*get_next_line(int fd)
 	char		*line;
 	static char	*backup;
 
-
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	if (backup && ft_is_newline(backup) >= 0)
@@ -107,7 +106,7 @@ char	*get_next_line(int fd)
 		if (!line)
 			return (NULL);	
 	}
-	if (ft_is_newline(backup) >= 0)
+	if (ft_is_newline(line) >= 0)
 		backup = ft_backup(&line);
 	return (line);
 }
