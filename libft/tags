@@ -3,11 +3,11 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 BNS_OBJS	Makefile	/^BNS_OBJS = $(BNS_SRCS:%.c=%.o)$/;"	m
 BNS_SRCS	Makefile	/^BNS_SRCS = ft_lstnew_bonus.c \\$/;"	m
 FLAGS	Makefile	/^FLAGS = -Wall -Wextra -Werror$/;"	m
-LIBFT_H	libft.h	/^# define LIBFT_H$/;"	d
+LIBFT_H	libft.h	14;"	d
 NAME	Makefile	/^NAME = libft.a$/;"	m
 OBJECTS	Makefile	/^	OBJECTS = $(OBJS) $(BNS_OBJS)$/;"	m
 OBJECTS	Makefile	/^	OBJECTS = $(OBJS)$/;"	m
@@ -61,6 +61,7 @@ ft_substr	ft_substr.c	/^char	*ft_substr(char const *s, unsigned int start, size_
 ft_tolower	ft_tolower.c	/^int	ft_tolower(int c)$/;"	f
 ft_toupper	ft_toupper.c	/^int	ft_toupper(int c)$/;"	f
 ft_word_count	ft_split.c	/^static size_t	ft_word_count(char const *s, char c)$/;"	f	file:
+main	main.c	/^int main()$/;"	f
 next	libft.h	/^	struct s_list	*next;$/;"	m	struct:s_list	typeref:struct:s_list::s_list
 s_list	libft.h	/^typedef struct s_list$/;"	s
 t_list	libft.h	/^}	t_list;$/;"	t	typeref:struct:s_list
