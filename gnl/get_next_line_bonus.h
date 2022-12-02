@@ -10,15 +10,14 @@
 typedef struct	s_list
 {
 	int				fd;
-	char			*buf;
-	struct s_lst	*next;
 	char			*backup;
+	struct s_lst	*next;
 }	t_list;
 
-size_t  ft_strlen(const char *s);
-char    *ft_strdup(const char *s1);
-char    *ft_substr(char const *s, unsigned int start, size_t len);
-char    *ft_strjoin(char const *s1, char const *s2);
-char    *get_next_line(int fd);
+static t_list	*ft_lst_create(int fd);
+t_list			*ft_lst_find_create(t_list **list, int fd);
+size_t			ft_strlen(const char *s);
+char			*find_newline(char *str);
+char    		*get_next_line(int fd);
 
 #endif
