@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wocheon <wocheon@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 14:29:18 by wocheon           #+#    #+#             */
-/*   Updated: 2022/11/05 15:45:36 by wocheon          ###   ########.fr       */
+/*   Created: 2022/12/08 00:53:07 by wocheon           #+#    #+#             */
+/*   Updated: 2022/12/16 22:45:10 by wocheon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_get_line(int fd, char *buf, char *backup)
 		read_bytes = read(fd, buf, BUFFER_SIZE);
 		if (read_bytes == -1)
 		{
-			if (!backup)
+			if (backup)
 				free(backup);
 			return (NULL);
 		}

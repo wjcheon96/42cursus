@@ -5,29 +5,36 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 BUFFER_SIZE	get_next_line.h	19;"	d
-BUFFER_SIZE	get_next_line_bonus.h	7;"	d
-GET_NEXT_LINE_BONUS_H	get_next_line_bonus.h	2;"	d
+BUFFER_SIZE	get_next_line_bonus.h	21;"	d
+GET_NEXT_LINE_BONUS_H	get_next_line_bonus.h	14;"	d
 GET_NEXT_LINE_H	get_next_line.h	14;"	d
-backup	get_next_line_bonus.h	/^	char			*backup;$/;"	m	struct:s_list
-fd	get_next_line_bonus.h	/^	int				fd;$/;"	m	struct:s_list
-find_newline	get_next_line_utils_bonus.c	/^char	*find_newline(char *str)$/;"	f
+data	get_next_line_bonus.h	/^	char			*data;$/;"	m	struct:s_node
+delete_node	get_next_line_utils_bonus.c	/^void	delete_node(t_list *list, t_line *backup)$/;"	f
+fd	get_next_line_bonus.h	/^	int				fd;$/;"	m	struct:s_node
+find_node	get_next_line_utils_bonus.c	/^t_line	*find_node(t_list *list, int fd)$/;"	f
 ft_backup	get_next_line.c	/^char	*ft_backup(char **line)$/;"	f
 ft_get_line	get_next_line.c	/^char	*ft_get_line(int fd, char *buf, char *backup)$/;"	f
 ft_is_newline	get_next_line.c	/^int	ft_is_newline(char *str)$/;"	f
 ft_join_buf	get_next_line.c	/^char	*ft_join_buf(char *backup, char *buf)$/;"	f
-ft_line_read	get_next_line_bonus.c	/^static char	*ft_line_read(int fd, char *backup)$/;"	f	file:
-ft_lst_create	get_next_line_utils_bonus.c	/^static t_list	*ft_lst_create(int fd)$/;"	f	file:
-ft_lst_find_create	get_next_line_utils_bonus.c	/^t_list	*ft_lst_find_create(t_list **list, int fd)$/;"	f
+ft_strchr_idx	get_next_line_bonus.c	/^size_t	ft_strchr_idx(char *s, char c)$/;"	f
 ft_strdup	get_next_line_utils.c	/^char	*ft_strdup(const char *s1)$/;"	f
-ft_strjoin	get_next_line_bonus.c	/^static char	*ft_strjoin(char *s1, const char *s2, size_t s1_len, size_t s2_len)$/;"	f	file:
 ft_strjoin	get_next_line_utils.c	/^char	*ft_strjoin(char const *s1, char const *s2)$/;"	f
+ft_strjoin	get_next_line_utils_bonus.c	/^char	*ft_strjoin(char *s1, char *s2, ssize_t read_byte)$/;"	f
 ft_strlen	get_next_line_utils.c	/^size_t	ft_strlen(const char *s)$/;"	f
-ft_strlen	get_next_line_utils_bonus.c	/^size_t	ft_strlen(const char *s)$/;"	f
+ft_strncpy	get_next_line_utils_bonus.c	/^char	*ft_strncpy(char *dest, const char *src, size_t n)$/;"	f
 ft_substr	get_next_line_utils.c	/^char	*ft_substr(char const *s, unsigned int start, size_t len)$/;"	f
-get_line	get_next_line_bonus.c	/^static char	*get_line(char	**backup_ptr, char *backup)$/;"	f	file:
+get_newline	get_next_line_bonus.c	/^char	*get_newline(t_list *list, t_line *backup, ssize_t read_byte)$/;"	f
 get_next_line	get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
 get_next_line	get_next_line_bonus.c	/^char	*get_next_line(int fd)$/;"	f
+get_result	get_next_line_bonus.c	/^char	*get_result(t_list *list, t_line *backup, size_t result_len,$/;"	f
+head	get_next_line_bonus.h	/^	t_line	*head;$/;"	m	struct:s_list
 main	main.c	/^int main()$/;"	f
-next	get_next_line_bonus.h	/^	struct s_lst	*next;$/;"	m	struct:s_list	typeref:struct:s_list::s_lst
+next	get_next_line_bonus.h	/^	struct s_node	*next;$/;"	m	struct:s_node	typeref:struct:s_node::s_node
+prev	get_next_line_bonus.h	/^	struct s_node	*prev;$/;"	m	struct:s_node	typeref:struct:s_node::s_node
+push_back	get_next_line_utils_bonus.c	/^t_line	*push_back(t_list *list, int fd)$/;"	f
+read_buf	get_next_line_bonus.c	/^ssize_t	read_buf(t_line *backup, int fd)$/;"	f
 s_list	get_next_line_bonus.h	/^typedef struct	s_list$/;"	s
+s_node	get_next_line_bonus.h	/^typedef struct	s_node$/;"	s
+t_line	get_next_line_bonus.h	/^}	t_line;$/;"	t	typeref:struct:s_node
 t_list	get_next_line_bonus.h	/^}	t_list;$/;"	t	typeref:struct:s_list
+tail	get_next_line_bonus.h	/^	t_line	*tail;$/;"	m	struct:s_list

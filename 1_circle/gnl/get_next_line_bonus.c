@@ -1,101 +1,136 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wocheon <wocheon@student.42seoul.kr>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/16 18:45:01 by wocheon           #+#    #+#             */
+/*   Updated: 2022/12/16 22:30:38 by wocheon          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line_bonus.h"
 
-static char	*ft_strjoin(char *s1, const char *s2, size_t s1_len, size_t s2_len)
+size_t	ft_strchr_idx(char *s, char c)
 {
-	char	*str;
-	size_t	idx;
+	size_t	i;
 
-	str = malloc((s1_len + s2_len + 1) * sizeof(char));
-	if (!str)
+	if (!s)
+		return (0);
+	i = 0;
+	while (s[i])
 	{
-		free(s1);
-		return (NULL);
+		if (s[i] == c)
+			return (i + 1);
+		i++;
 	}
-	idx = 0;
-	while (idx < s1_len)
-	{
-		str[idx] = s1[idx];
-		idx++;
-	}
-	while (*s2)
-		str[idx++] = *s2++;
-	str[idx] = '\0';
-	if (s1)
-		free(s1);
-	return (str);
+	if (c == '\0')
+		return (i + 1);
+	return (0);
 }
 
-static char	*ft_line_read(int fd, char *backup)
+char	*get_newline(t_list *list, t_line *backup, ssize_t read_byte)
+{
+	char	*result;
+	ssize_t	data_len;
+
+	data_len = 0;
+	while (backup -> data && backup -> data[data_len])
+		data_len++;
+	if (read_byte < 0 || data_len == 0)
+	{
+		delete_node(list, backup);
+		return (NULL);
+	}
+	result = malloc(sizeof(char) * (data_len + 1));
+	if (result == NULL)
+	{
+		delete_node(list, backup);
+		return (NULL);
+	}
+	ft_strncpy(result, backup -> data, data_len);
+	delete_node(list, backup);
+	return (result);
+}
+
+char	*get_result(t_list *list, t_line *backup, size_t result_len,
+	size_t data_len)
+{
+	char	*result;
+	char	*temp;
+
+	while (backup -> data && backup->data[data_len])
+		data_len++;
+	result = malloc(sizeof(char) * (result_len + 1));
+	if (result == 0)
+	{
+		delete_node(list, backup);
+		return (0);
+	}
+	ft_strncpy(result, backup -> data, result_len);
+	temp = backup -> data;
+	backup -> data = malloc(sizeof(char) * (data_len - result_len + 1));
+	if (backup -> data == 0)
+	{
+		free (result);
+		backup -> data = temp;
+		delete_node(list, backup);
+		return (0);
+	}
+	ft_strncpy(backup -> data, temp + result_len, data_len - result_len);
+	free(temp);
+	return (result);
+}
+
+ssize_t	read_buf(t_line *backup, int fd)
 {
 	char	*buf;
-	size_t	read_byte;
-	size_t	backup_len;
+	char	*temp;
+	ssize_t	read_byte;
 
-	if (find_newline(backup))
-		return (backup);
-	buf = malloc(sizeof(char) * (BUFFER_SIZE + 1));
-	if (!buf)
-		return (NULL);
-	backup_len = ft_strlen(backup);
-	buf[0] = '\0';
-	while (!find_newline(buf))
+	buf = malloc(sizeof(char) * BUFFER_SIZE);
+	if (buf == NULL)
+		return (-1);
+	while (1)
 	{
 		read_byte = read(fd, buf, BUFFER_SIZE);
 		if (read_byte <= 0)
-			break ;
-		buf[read_byte] = '\0';
-		backup = ft_strjoin(backup, buf, backup_len, read_byte);
-		backup_len += read_byte;
-		if (!backup)
-			break ;
+			break;
+		temp = backup -> data;
+		backup -> data = ft_strjoin(backup -> data, buf, read_byte);
+		if (backup -> data == 0)
+		{
+			backup -> data = temp;
+			return (-1);
+		}
+		free (temp);
+		if (ft_strchr_idx(backup -> data, '\n') != 0)
+			break;
 	}
 	free(buf);
-	return (backup);
-}
-
-static char	*get_line(char	**backup_ptr, char *backup)
-{
-	char	*line;
-	char	*newline_idx;
-	size_t	i;
-
-	newline_idx = find_newline(backup);
-	if (!newline_idx)
-	{
-		line = backup;
-		*backup_ptr = NULL;
-		return (line);
-	}
-	line = malloc((newline_idx - backup + 2) * sizeof(char));
-	if (!line)
-	{
-		free(backup);
-		*backup_ptr = NULL;
-		return (NULL);
-	}
-	i = 0;
-	while (backup != newline_idx)
-		line[i++] = *backup++;
-	line[i++] = '\n';
-	line[i] = '\0';
-	return (line);
+	return (read_byte);
 }
 
 char	*get_next_line(int fd)
 {
-	static t_list	*buf_list = NULL;
-	t_list			*cur_list;
-	char			*line;
+	static t_list	list;
+	t_line			*backup;
+	size_t			result_len;
+	ssize_t			read_byte;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (BUFFER_SIZE <= 0)
+		return (0);
+	backup = find_node(&list, fd);
+	if (!backup)
 		return (NULL);
-	cur_list = ft_lst_find_create(&buf_list, fd);
-	if (!cur_list)
-		return (NULL);
-	cur_list -> backup = ft_line_read(fd, cur_list -> backup);
-	if (cur_list -> backup != NULL)
-		line = get_line(&cur_list -> backup, cur_list -> backup);
-	else
-		line = NULL;
-
+	while (1)
+	{
+		result_len = ft_strchr_idx(backup -> data, '\n');
+		if (result_len > 0)
+			return (get_result(&list, backup, result_len, 0));
+		read_byte = read_buf(backup, fd);
+		if (read_byte <= 0)
+			return (get_newline(&list, backup, read_byte));
+	}
 }
