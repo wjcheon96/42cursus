@@ -1,0 +1,246 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+App	visualizer/pswapviz.py	/^from kivy.app import App$/;"	i
+BooleanProperty	visualizer/pswapviz.py	/^from kivy.properties import BooleanProperty$/;"	i
+BoxLayout	visualizer/pswapviz.py	/^from kivy.uix.boxlayout import BoxLayout$/;"	i
+Builder	visualizer/pswapviz.py	/^from kivy.lang import Builder$/;"	i
+Button	visualizer/pswapviz.py	/^from kivy.uix.button import Button$/;"	i
+CC	Makefile	/^CC = cc$/;"	m
+CC	libft/Makefile	/^CC = cc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g3$/;"	m
+CFLAGS	libft/Makefile	/^CFLAGS = -Wall -Wextra -Werror$/;"	m
+Clock	visualizer/pswapviz.py	/^from kivy.clock import Clock$/;"	i
+Color	visualizer/pswapviz.py	/^from kivy.graphics import Color, Rectangle$/;"	i
+DEFAULT_PSWAP_PATH	visualizer/pswapviz.py	/^DEFAULT_PSWAP_PATH = 'push_swap'$/;"	v
+FocusBehavior	visualizer/pswapviz.py	/^from kivy.uix.behaviors import FocusBehavior$/;"	i
+IterMoveList	visualizer/pswapviz.py	/^class IterMoveList:$/;"	c
+LIBFT_H	libft/libft.h	/^# define LIBFT_H$/;"	d
+Label	visualizer/pswapviz.py	/^from kivy.uix.label import Label$/;"	i
+LayoutSelectionBehavior	visualizer/pswapviz.py	/^from kivy.uix.recycleview.layout import LayoutSelectionBehavior$/;"	i
+MAX	libft/libft.h	/^# define MAX /;"	d
+MIN	libft/libft.h	/^# define MIN /;"	d
+MoveLabel	visualizer/pswapviz.py	/^class MoveLabel(RecycleDataViewBehavior, Label):$/;"	c
+MoveScrollList	visualizer/pswapviz.py	/^class MoveScrollList(RecycleView):$/;"	c
+NAME	Makefile	/^NAME = push_swap$/;"	m
+NAME	libft/Makefile	/^NAME = libft.a$/;"	m
+NumericProperty	visualizer/pswapviz.py	/^from kivy.properties import NumericProperty$/;"	i
+OBJS	Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OBJS	libft/Makefile	/^OBJS = $(SRCS:%.c=%.o)$/;"	m
+PUSH_SWAP_H	push_swap.h	/^# define PUSH_SWAP_H$/;"	d
+ProgressSlider	visualizer/pswapviz.py	/^class ProgressSlider(Slider):$/;"	c
+PushSwapVizApp	visualizer/pswapviz.py	/^class PushSwapVizApp(App):$/;"	c
+RM	Makefile	/^RM	 = rm -rf$/;"	m
+RM	libft/Makefile	/^RM = rm -rf$/;"	m
+RectDisplayWidget	visualizer/pswapviz.py	/^class RectDisplayWidget(Widget):$/;"	c
+Rectangle	visualizer/pswapviz.py	/^from kivy.graphics import Color, Rectangle$/;"	i
+RecycleBoxLayout	visualizer/pswapviz.py	/^from kivy.uix.recycleboxlayout import RecycleBoxLayout$/;"	i
+RecycleDataViewBehavior	visualizer/pswapviz.py	/^from kivy.uix.recycleview.views import RecycleDataViewBehavior$/;"	i
+RecycleView	visualizer/pswapviz.py	/^from kivy.uix.recycleview import RecycleView$/;"	i
+SRCS	Makefile	/^SRCS = deque.c main.c push_swap.c validity_check.c instructions1.c instructions2.c instructions3.c greedy.c sort.c$/;"	m
+SRCS	libft/Makefile	/^SRCS = ft_isalpha.c \\$/;"	m
+SelectableRecycleBoxLayout	visualizer/pswapviz.py	/^):$/;"	c
+Slider	visualizer/pswapviz.py	/^from kivy.uix.slider import Slider$/;"	i
+StackRectangle	visualizer/pswapviz.py	/^class StackRectangle:$/;"	c
+Widget	visualizer/pswapviz.py	/^    from kivy.uix.widget import Widget$/;"	i
+Widget	visualizer/pswapviz.py	/^from kivy.uix.widget import Widget$/;"	i
+Window	visualizer/pswapviz.py	/^from kivy.core.window import Window$/;"	i
+__init__	visualizer/pswapviz.py	/^    def __init__(self, **kwargs):$/;"	m	class:ProgressSlider
+__init__	visualizer/pswapviz.py	/^    def __init__(self, **kwargs):$/;"	m	class:RectDisplayWidget
+__init__	visualizer/pswapviz.py	/^    def __init__(self, moves: list):$/;"	m	class:IterMoveList
+__init__	visualizer/pswapviz.py	/^    def __init__(self, number, rank, pos, size):$/;"	m	class:StackRectangle
+_move_rect	visualizer/pswapviz.py	/^    def _move_rect(self, *largs):$/;"	m	class:RectDisplayWidget
+_resize_rect	visualizer/pswapviz.py	/^    def _resize_rect(self, *largs):$/;"	m	class:RectDisplayWidget
+apply_selection	visualizer/pswapviz.py	/^    def apply_selection(self, rv, index, is_selected):$/;"	m	class:MoveLabel
+argparse	visualizer/pswapviz.py	/^import argparse$/;"	i
+bottom	push_swap.h	/^	t_stack_node	*bottom;$/;"	m	struct:s_stack
+build	visualizer/pswapviz.py	/^    def build(self):$/;"	m	class:PushSwapVizApp
+clear_selection	visualizer/pswapviz.py	/^    def clear_selection(self):$/;"	m	class:MoveScrollList
+cnt	push_swap.h	/^	int				cnt;$/;"	m	struct:s_stack
+content	libft/libft.h	/^	void			*content;$/;"	m	struct:s_list
+convert_distance_to_scroll	visualizer/pswapviz.py	/^    def convert_distance_to_scroll(self, dx, dy):$/;"	m	class:MoveScrollList
+create_move_list	visualizer/pswapviz.py	/^    def create_move_list(self):$/;"	m	class:PushSwapVizApp
+create_stack	visualizer/pswapviz.py	/^    def create_stack(self):$/;"	m	class:PushSwapVizApp
+create_vars	visualizer/pswapviz.py	/^    def create_vars(self):$/;"	m	class:PushSwapVizApp
+current_move_id	visualizer/pswapviz.py	/^    current_move_id = NumericProperty(-1)$/;"	v	class:RectDisplayWidget
+data	libft/libft.h	/^	char			*data;$/;"	m	struct:s_elem
+deselect_item	visualizer/pswapviz.py	/^    def deselect_item(self, index):$/;"	m	class:MoveScrollList
+do_move	visualizer/pswapviz.py	/^    def do_move(self, move):$/;"	m	class:RectDisplayWidget
+do_move_rev	visualizer/pswapviz.py	/^    def do_move_rev(self, move):$/;"	m	class:RectDisplayWidget
+do_multi_move	visualizer/pswapviz.py	/^    def do_multi_move(self, limit):$/;"	m	class:RectDisplayWidget
+do_multi_move_rev	visualizer/pswapviz.py	/^    def do_multi_move_rev(self, limit):$/;"	m	class:RectDisplayWidget
+do_one_move	visualizer/pswapviz.py	/^    def do_one_move(self, dt, *largs):$/;"	m	class:RectDisplayWidget
+do_one_move_rev	visualizer/pswapviz.py	/^    def do_one_move_rev(self, dt, *largs):$/;"	m	class:RectDisplayWidget
+dp	visualizer/pswapviz.py	/^from kivy.metrics import sp, dp$/;"	i
+draw_rectangles	visualizer/pswapviz.py	/^    def draw_rectangles(self, *largs):$/;"	m	class:RectDisplayWidget
+dup_check	validity_check.c	/^int	dup_check(t_stack *stack, long long num)$/;"	f
+fd	libft/libft.h	/^	int				fd;$/;"	m	struct:s_elem
+find_max	greedy.c	/^int	find_max(t_stack *stack_a)$/;"	f
+find_rank	push_swap.c	/^int	find_rank(t_stack *stack, t_stack_node *new)$/;"	f
+ft_abs	greedy.c	/^int	ft_abs(int num)$/;"	f
+ft_atoi	libft/ft_atoi.c	/^long long	ft_atoi(const char *str)$/;"	f
+ft_bzero	libft/ft_bzero.c	/^void	ft_bzero(void *s, size_t n)$/;"	f
+ft_calloc	libft/ft_calloc.c	/^void	*ft_calloc(size_t count, size_t size)$/;"	f
+ft_error	libft/ft_split.c	/^static char	**ft_error(char **str)$/;"	f	file:
+ft_error	main.c	/^void	ft_error(void)$/;"	f
+ft_get_arg	libft/ft_printf.c	/^int	ft_get_arg(char format, va_list *ap)$/;"	f
+ft_isalnum	libft/ft_isalnum.c	/^int	ft_isalnum(int c)$/;"	f
+ft_isalpha	libft/ft_isalpha.c	/^int	ft_isalpha(int c)$/;"	f
+ft_isascii	libft/ft_isascii.c	/^int	ft_isascii(int c)$/;"	f
+ft_isdigit	libft/ft_isdigit.c	/^int	ft_isdigit(int c)$/;"	f
+ft_isprint	libft/ft_isprint.c	/^int	ft_isprint(int c)$/;"	f
+ft_itoa	libft/ft_itoa.c	/^char	*ft_itoa(int n)$/;"	f
+ft_itoa_base	libft/ft_printf_utils.c	/^char	*ft_itoa_base(unsigned long long n, char *base)$/;"	f
+ft_itoa_size	libft/ft_printf_utils.c	/^static int	ft_itoa_size(unsigned long long n, int base_len)$/;"	f	file:
+ft_len_count	libft/ft_itoa.c	/^static int	ft_len_count(long long num)$/;"	f	file:
+ft_lstadd_back	libft/ft_lstadd_back_bonus.c	/^void	ft_lstadd_back(t_list **lst, t_list *new_node)$/;"	f
+ft_lstadd_front	libft/ft_lstadd_front_bonus.c	/^void	ft_lstadd_front(t_list **lst, t_list *new_node)$/;"	f
+ft_lstclear	libft/ft_lstclear_bonus.c	/^void	ft_lstclear(t_list **lst, void (*del)(void *))$/;"	f
+ft_lstdelone	libft/ft_lstdelone_bonus.c	/^void	ft_lstdelone(t_list *lst, void (*del)(void *))$/;"	f
+ft_lstiter	libft/ft_lstiter_bonus.c	/^void	ft_lstiter(t_list *lst, void (*f)(void *))$/;"	f
+ft_lstlast	libft/ft_lstlast_bonus.c	/^t_list	*ft_lstlast(t_list *lst)$/;"	f
+ft_lstmap	libft/ft_lstmap_bonus.c	/^t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))$/;"	f
+ft_lstnew	libft/ft_lstnew_bonus.c	/^t_list	*ft_lstnew(void *content)$/;"	f
+ft_lstsize	libft/ft_lstsize_bonus.c	/^int	ft_lstsize(t_list *lst)$/;"	f
+ft_memchr	libft/ft_memchr.c	/^void	*ft_memchr(const void *s, int c, size_t n)$/;"	f
+ft_memcmp	libft/ft_memcmp.c	/^int	ft_memcmp(const void *s1, const void *s2, size_t n)$/;"	f
+ft_memcpy	libft/ft_memcpy.c	/^void	*ft_memcpy(void *dest, const void *src, size_t n)$/;"	f
+ft_memmove	libft/ft_memmove.c	/^void	*ft_memmove(void *dest, const void *src, size_t n)$/;"	f
+ft_memset	libft/ft_memset.c	/^void	*ft_memset(void *s, int c, size_t n)$/;"	f
+ft_print_char	libft/ft_printf_formats.c	/^int	ft_print_char(int ap)$/;"	f
+ft_print_int	libft/ft_printf_formats.c	/^int	ft_print_int(long long ap)$/;"	f
+ft_print_ptr	libft/ft_printf_formats.c	/^int	ft_print_ptr(uintptr_t ap)$/;"	f
+ft_print_str	libft/ft_printf_formats.c	/^int	ft_print_str(char *ap)$/;"	f
+ft_print_uint	libft/ft_printf_formats.c	/^int	ft_print_uint(unsigned int ap, char type)$/;"	f
+ft_printf	libft/ft_printf.c	/^int	ft_printf(const char *format, ...)$/;"	f
+ft_putchar_fd	libft/ft_putchar_fd.c	/^void	ft_putchar_fd(char c, int fd)$/;"	f
+ft_putendl_fd	libft/ft_putendl_fd.c	/^void	ft_putendl_fd(char *s, int fd)$/;"	f
+ft_putnbr_fd	libft/ft_putnbr_fd.c	/^void	ft_putnbr_fd(int n, int fd)$/;"	f
+ft_putstr_fd	libft/ft_putstr_fd.c	/^void	ft_putstr_fd(char *s, int fd)$/;"	f
+ft_putword	libft/ft_split.c	/^static char	**ft_putword(char const *s, char c, char **str, size_t cnt)$/;"	f	file:
+ft_split	libft/ft_split.c	/^char	**ft_split(char const *s, char c)$/;"	f
+ft_strchr	libft/ft_strchr.c	/^char	*ft_strchr(const char *s, int c)$/;"	f
+ft_strcmp	libft/ft_strcmp.c	/^int	ft_strcmp(char *s1, char *s2)$/;"	f
+ft_strdup	libft/ft_strdup.c	/^char	*ft_strdup(const char *s1)$/;"	f
+ft_striteri	libft/ft_striteri.c	/^void	ft_striteri(char *s, void (*f)(unsigned int, char*))$/;"	f
+ft_strjoin	libft/ft_strjoin.c	/^char	*ft_strjoin(char const *s1, char const *s2)$/;"	f
+ft_strlcat	libft/ft_strlcat.c	/^size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)$/;"	f
+ft_strlcpy	libft/ft_strlcpy.c	/^size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)$/;"	f
+ft_strlen	libft/ft_printf_utils.c	/^size_t	ft_strlen(const char *s)$/;"	f
+ft_strlen	libft/ft_strlen.c	/^size_t	ft_strlen(const char *s)$/;"	f
+ft_strmapi	libft/ft_strmapi.c	/^char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))$/;"	f
+ft_strncmp	libft/ft_strncmp.c	/^int	ft_strncmp(const char *s1, const char *s2, size_t n)$/;"	f
+ft_strnstr	libft/ft_strnstr.c	/^char	*ft_strnstr(const char *haystack, const char *needle, size_t len)$/;"	f
+ft_strrchr	libft/ft_strrchr.c	/^char	*ft_strrchr(const char *s, int c)$/;"	f
+ft_strtrim	libft/ft_strtrim.c	/^char	*ft_strtrim(char const *s1, char const *s2)$/;"	f
+ft_substr	libft/ft_substr.c	/^char	*ft_substr(char const *s, unsigned int start, size_t len)$/;"	f
+ft_tolower	libft/ft_tolower.c	/^int	ft_tolower(int c)$/;"	f
+ft_toupper	libft/ft_toupper.c	/^int	ft_toupper(int c)$/;"	f
+ft_word_count	libft/ft_split.c	/^static size_t	ft_word_count(char const *s, char c)$/;"	f	file:
+generate_nblist	visualizer/pswapviz.py	/^    def generate_nblist(self, stack_size):$/;"	m	class:PushSwapVizApp
+get_bigger	greedy.c	/^int	get_bigger(int a, int b, int a_loc, int b_loc)$/;"	f
+get_cnt	greedy.c	/^int	get_cnt(t_stack *stack_a, int rank, int temp)$/;"	f
+get_diff	greedy.c	/^int	get_diff(t_stack *stack_a, int rank)$/;"	f
+get_max	greedy.c	/^int	get_max(t_stack *stack_a)$/;"	f
+get_min_rotate	greedy.c	/^void	get_min_rotate(t_stack *stack_a, t_stack *stack_b, int *a, int *b)$/;"	f
+get_rank	visualizer/pswapviz.py	/^    def get_rank(self, num):$/;"	m	class:RectDisplayWidget
+get_rect_pos	visualizer/pswapviz.py	/^    def get_rect_pos(self, pos_x, iter_y):$/;"	m	class:RectDisplayWidget
+get_rect_size	visualizer/pswapviz.py	/^    def get_rect_size(self, rank):$/;"	m	class:RectDisplayWidget
+grab_progress_callback	visualizer/pswapviz.py	/^    def grab_progress_callback(self, instance):$/;"	m	class:PushSwapVizApp
+gradient	visualizer/pswapviz.py	/^    gradient = NumericProperty(0)$/;"	v	class:RectDisplayWidget
+greedy	greedy.c	/^void	greedy(t_stack *stack_a, t_stack *stack_b, int rank)$/;"	f
+greedy_pb	greedy.c	/^void	greedy_pb(t_stack *stack_a, t_stack *stack_b, int rank)$/;"	f
+head	libft/libft.h	/^	t_elem	*head;$/;"	m	struct:s_node
+index	visualizer/pswapviz.py	/^    index = None$/;"	v	class:MoveLabel
+init_deque	push_swap.c	/^void	init_deque(t_stack *stack)$/;"	f
+init_new_node	deque.c	/^t_stack_node	*init_new_node(t_stack *stack, int num)$/;"	f
+is_valid	validity_check.c	/^void	is_valid(t_stack *stack, char *str)$/;"	f
+itertools	visualizer/pswapviz.py	/^import itertools$/;"	i
+key_action	visualizer/pswapviz.py	/^    def key_action(self, *args):$/;"	m	class:PushSwapVizApp
+main	main.c	/^int	main(int argc, char **argv)$/;"	f
+make_stack	push_swap.c	/^int	make_stack(t_stack *stack, char **argv)$/;"	f
+moves_total	visualizer/pswapviz.py	/^    moves_total = 0$/;"	v	class:MoveScrollList
+moves_total	visualizer/pswapviz.py	/^    moves_total = NumericProperty(0)$/;"	v	class:RectDisplayWidget
+next	libft/libft.h	/^	struct s_elem	*next;$/;"	m	struct:s_elem	typeref:struct:s_elem::s_elem
+next	libft/libft.h	/^	struct s_list	*next;$/;"	m	struct:s_list	typeref:struct:s_list::s_list
+next	push_swap.h	/^	struct s_stack_node	*next;$/;"	m	struct:s_stack_node	typeref:struct:s_stack_node::s_stack_node
+next	visualizer/pswapviz.py	/^    def next(self):$/;"	m	class:IterMoveList
+num	push_swap.h	/^	int					num;$/;"	m	struct:s_stack_node
+num_check	validity_check.c	/^int	num_check(char *str)$/;"	f
+on_grab	visualizer/pswapviz.py	/^    def on_grab(self):$/;"	m	class:ProgressSlider
+on_moves_label	visualizer/pswapviz.py	/^    def on_moves_label(self, instance, moves_total):$/;"	m	class:PushSwapVizApp
+on_pause_status	visualizer/pswapviz.py	/^    def on_pause_status(self, instance, value):$/;"	m	class:RectDisplayWidget
+on_release	visualizer/pswapviz.py	/^    def on_release(self):$/;"	m	class:ProgressSlider
+on_speed_ratio	visualizer/pswapviz.py	/^    def on_speed_ratio(self, instance, speed_ratio):$/;"	m	class:RectDisplayWidget
+on_speed_update	visualizer/pswapviz.py	/^    def on_speed_update(self, instance, speed_ratio):$/;"	m	class:PushSwapVizApp
+on_start	visualizer/pswapviz.py	/^    def on_start(self):$/;"	m	class:PushSwapVizApp
+on_touch_down	visualizer/pswapviz.py	/^    def on_touch_down(self, touch):$/;"	m	class:ProgressSlider
+on_touch_up	visualizer/pswapviz.py	/^    def on_touch_up(self, touch):$/;"	m	class:ProgressSlider
+os	visualizer/pswapviz.py	/^import os$/;"	i
+pa	instructions1.c	/^void	pa(t_stack *stack_a, t_stack *stack_b)$/;"	f
+parse_cmdline	visualizer/pswapviz.py	/^    def parse_cmdline(self, argv):$/;"	m	class:PushSwapVizApp
+pathlib	visualizer/pswapviz.py	/^import pathlib$/;"	i
+pause_status	visualizer/pswapviz.py	/^    pause_status = NumericProperty(1)$/;"	v	class:RectDisplayWidget
+pause_toggle	visualizer/pswapviz.py	/^    def pause_toggle(self, event):$/;"	m	class:PushSwapVizApp
+pb	instructions1.c	/^void	pb(t_stack *stack_a, t_stack *stack_b)$/;"	f
+play_updt	visualizer/pswapviz.py	/^    def play_updt(self, *largs):$/;"	m	class:PushSwapVizApp
+pop_bottom	deque.c	/^t_stack_node	*pop_bottom(t_stack *stack)$/;"	f
+pop_top	deque.c	/^t_stack_node	*pop_top(t_stack *stack)$/;"	f
+populate	visualizer/pswapviz.py	/^    def populate(self, moves):$/;"	m	class:MoveScrollList
+prepare	visualizer/pswapviz.py	/^    def prepare(self, stack, moves_list):$/;"	m	class:RectDisplayWidget
+prev	libft/libft.h	/^	struct s_elem	*prev;$/;"	m	struct:s_elem	typeref:struct:s_elem::s_elem
+prev	push_swap.h	/^	struct s_stack_node	*prev;$/;"	m	struct:s_stack_node	typeref:struct:s_stack_node::s_stack_node
+prev	visualizer/pswapviz.py	/^    def prev(self):$/;"	m	class:IterMoveList
+push_bottom	deque.c	/^void	push_bottom(t_stack *stack, t_stack_node *new_node)$/;"	f
+push_swap	push_swap.c	/^void	push_swap(int argc, char **argv)$/;"	f
+push_top	deque.c	/^void	push_top(t_stack *stack, t_stack_node *new_node)$/;"	f
+ra	instructions2.c	/^void	ra(t_stack *stack)$/;"	f
+random	visualizer/pswapviz.py	/^import random$/;"	i
+rank	push_swap.h	/^	int					rank;$/;"	m	struct:s_stack_node
+rb	instructions2.c	/^void	rb(t_stack *stack)$/;"	f
+refresh_view_attrs	visualizer/pswapviz.py	/^    def refresh_view_attrs(self, rv, index, data):$/;"	m	class:MoveLabel
+release_progress_callback	visualizer/pswapviz.py	/^    def release_progress_callback(self, instance):$/;"	m	class:PushSwapVizApp
+reset_stack	visualizer/pswapviz.py	/^    def reset_stack(self, *largs):$/;"	m	class:RectDisplayWidget
+rotate_a	greedy.c	/^void	rotate_a(t_stack  *stack_a, int a)$/;"	f
+rotate_b	greedy.c	/^void	rotate_b(t_stack *stack_b, int b)$/;"	f
+rotate_same	greedy.c	/^void	rotate_same(t_stack *stack_a, t_stack *stack_b, int *a, int *b)$/;"	f
+rr	instructions2.c	/^void	rr(t_stack *stack_a, t_stack *stack_b)$/;"	f
+rra	instructions3.c	/^void	rra(t_stack *stack)$/;"	f
+rrb	instructions3.c	/^void	rrb(t_stack *stack)$/;"	f
+rrr	instructions3.c	/^void	rrr(t_stack *stack_a, t_stack *stack_b)$/;"	f
+s_elem	libft/libft.h	/^typedef struct s_elem$/;"	s
+s_list	libft/libft.h	/^typedef struct s_list$/;"	s
+s_node	libft/libft.h	/^typedef struct s_node$/;"	s
+s_stack	push_swap.h	/^typedef struct s_stack$/;"	s
+s_stack_node	push_swap.h	/^typedef struct s_stack_node$/;"	s
+sa	instructions1.c	/^void	sa(t_stack *stack)$/;"	f
+sb	instructions1.c	/^void	sb(t_stack *stack)$/;"	f
+scroll_to_index	visualizer/pswapviz.py	/^    def scroll_to_index(self, index):$/;"	m	class:MoveScrollList
+select_item	visualizer/pswapviz.py	/^    def select_item(self, index):$/;"	m	class:MoveScrollList
+selectable	visualizer/pswapviz.py	/^    selectable = BooleanProperty(True)$/;"	v	class:MoveLabel
+selected	visualizer/pswapviz.py	/^    selected = BooleanProperty(False)$/;"	v	class:MoveLabel
+selected_item	visualizer/pswapviz.py	/^    selected_item = -1$/;"	v	class:MoveScrollList
+set_a_location	greedy.c	/^int	set_a_location(t_stack *stack_a, int rank)$/;"	f
+set_color	visualizer/pswapviz.py	/^    def set_color(self, rank, gradient):$/;"	m	class:RectDisplayWidget
+sort_small	sort.c	/^void	sort_small(t_stack *stack_a, t_stack *stack_b)$/;"	f
+sort_three	sort.c	/^void	sort_three(t_stack *stack_a, int *arr)$/;"	f
+sp	visualizer/pswapviz.py	/^from kivy.metrics import sp, dp$/;"	i
+speed_ratio	visualizer/pswapviz.py	/^    speed_ratio = NumericProperty(5.0)$/;"	v	class:RectDisplayWidget
+ss	instructions1.c	/^void	ss(t_stack *stack_a, t_stack *stack_b)$/;"	f
+stack_size	visualizer/pswapviz.py	/^    stack_size = NumericProperty()$/;"	v	class:PushSwapVizApp
+stack_size_int	visualizer/pswapviz.py	/^    def stack_size_int(self, x):$/;"	m	class:PushSwapVizApp
+subprocess	visualizer/pswapviz.py	/^import subprocess$/;"	i
+sys	visualizer/pswapviz.py	/^import sys$/;"	i
+t_elem	libft/libft.h	/^}	t_elem;$/;"	t	typeref:struct:s_elem
+t_list	libft/libft.h	/^}	t_list;$/;"	t	typeref:struct:s_list
+t_node	libft/libft.h	/^}	t_node;$/;"	t	typeref:struct:s_node
+t_stack	push_swap.h	/^}	t_stack;$/;"	t	typeref:struct:s_stack
+t_stack_node	push_swap.h	/^}	t_stack_node;$/;"	t	typeref:struct:s_stack_node
+tail	libft/libft.h	/^	t_elem	*tail;$/;"	m	struct:s_node
+top	push_swap.h	/^	t_stack_node	*top;$/;"	m	struct:s_stack
+update_move_progress_callback	visualizer/pswapviz.py	/^    def update_move_progress_callback(self, instance, value):$/;"	m	class:PushSwapVizApp
+update_progress_callback	visualizer/pswapviz.py	/^    def update_progress_callback(self, instance, value):$/;"	m	class:PushSwapVizApp
+valid_path	visualizer/pswapviz.py	/^    def valid_path(self, path):$/;"	m	class:PushSwapVizApp
